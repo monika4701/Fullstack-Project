@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+header {
+    height: 80px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.555);
+    position: fixed;
+    top: 0px;
+    
+}
+#logo img{
+    width: 70px;
+    height: 80px;
+    float: left;
+    margin-left: 20px;
+}
+header ul li{
+    float: right;
+    color: white;
+    font-size: 25px;
+   line-height: 70px;
+    list-style: none;
+    margin: 0px 40px;
+}
+header h1{
+    float: left;
+    
+}
+i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+#logoname h1::first-letter{
+    font-size: 50px;
+}
+
+#slider{
+   
+    width: 100%;
+    height: 600px;
+    animation: slide 40s infinite;
+}
+@keyframes slide{
+    0%{
+       background:url(../image/image2.jpeg); 
+    }
+    10%{
+       background:url(../image/Meghalaya-1.jpg); 
+    }
+    15%{
+       background:url(../image/88_2043.jpg); 
+    }
+    20%{
+        background:url(../image/Kerala_222.webp); 
+    }
+    30%{
+       background:url(../image/image2.jpeg); 
+    }
+    45%{
+       background:url(../image/cover-for-Places-To-Visit-In-Rishikesh-In-May_16-Jan.jpg); 
+    }
+    60%{
+       background:url(../image/image1.0.jpeg); 
+    }
+    75%{
+       background:url(../image/taj\ mahal.jpeg); 
+    }
+    90%{
+       background:url(../image/image4.jpg); 
+    }
+    100%{
+       background:url(../image/megg1.jpeg); 
+    }
+}
+aside{
+    float: right;
+}
+article{
+    margin: 30px 100px;
+    border: 2px solid white;
+}
+.wrap {
+    margin: 10px;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    float: right;
+  }
+  .cube {
+    margin: auto;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    transform-style: preserve-3d;
+  }
+  
+  .cube > div {
+    position: absolute;
+    box-sizing: border-box;
+    padding: auto;
+    height: 100%;
+    width: 100%;
+    opacity: 0.9;
+    
+  }
+  .front {
+    transform: translateZ(100px);
+  }
+  
+  .back {
+    transform: translateZ(-100px) rotateY(180deg);
+  }
+  
+  .right {
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+  }
+  
+  .left {
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+  }
+  
+  .top {
+    transform: rotateX(-270deg) translateY(-100px);
+    transform-origin: top center;
+  }
+  
+  .bottom {
+    transform: rotateX(270deg) translateY(100px);
+    transform-origin: bottom center;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    
+    to {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+  
+  .cube {
+    animation: rotate 20s infinite linear;
+    float: right;
+  }
+ 
+  .wrap:hover .front {
+    transform: translateZ(200px);
+  }
+  
+  .wrap:hover .back {
+    transform: translateZ(-200px) rotateY(180deg);
+  }
+  
+  .wrap:hover .right {
+    transform: rotateY(-270deg) translateZ(100px) translateX(100px);
+  }
+  
+  .wrap:hover .left {
+    transform: rotateY(270deg) translateZ(100px) translateX(-100px);
+  }
+  
+  .wrap:hover .top {
+    transform: rotateX(-270deg) translateZ(100px) translateY(-100px);
+  }
+  
+  .wrap:hover .bottom {
+    transform: rotateX(270deg) translateZ(100px) translateY(100px);
+  }
+  .cube > div {
+    transition: transform 0.2s ease-in;
+  }
+  

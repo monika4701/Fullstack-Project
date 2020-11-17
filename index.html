@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index-page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"  href="./css/index.css">  
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../Fullstack-Project/image/bb1.jpg">
+        </div>
+        <h1> <span style="color: yellow; margin-left: 10px;">Bharat</span></h1>
+        <h1><span style="color:green;margin-left: 5px;">Bhraman</span></h1>
+       
+        <ul>
+            <li><i class="fa fa-users" aria-hidden="true"></i><a href="../Fullstack-Project/linked_pages/aboutus.html">About us</a></li>
+            <li><i class="fa fa-cutlery" aria-hidden="true"></i><a href="../Fullstack-Project/linked_pages/cuisine.html">Cuisine</a></li>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="../Fullstack-Project/linked_pages/destination.html">Destination</a></li>
+            <li><i class="fa fa-home" aria-hidden="true"></i><A href="#"><a href="../Fullstack-Project/index.html">Home</a></A></li>
+        </ul>
+    </header>
+    <section>
+        <video id="slider" autoplay muted loop>
+            <source src="../Fullstack-Project/video/video (1).mp4" type="video/mp4">
+        </video>
+         <ul class="navigation">
+             <li onclick="videourl('../Fullstack-Project/video/Pexels Videos 2519660.mp4')"><img src="../Fullstack-Project/image/Screenshot (155).png"></li>
+             <li onclick="videourl('../Fullstack-Project/video/video (1).mp4')"><img src="../Fullstack-Project/image/Screenshot (156).png"></li>
+             <li onclick="videourl('../Fullstack-Project/video/video.mp4')"><img src="../Fullstack-Project/image/Screenshot (157).png"></li>
+             <li onclick="videourl('../Fullstack-Project/video/Pexels Videos 1779202.mp4')"><img src="../Fullstack-Project/image/Screenshot (158).png"></li>
+         </ul>
+    </section>
+    <script type="text/javascript">
+        function videourl(videolink){
+            document.getElementById("slider").src=videolink;
+        }
+   </script>
+</body>
+</html>
