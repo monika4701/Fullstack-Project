@@ -21,6 +21,7 @@ header {
     position: fixed;
     top: 0px;
     z-index: 100;
+    overflow: hidden;
     
 }
 #logo img{
@@ -146,4 +147,9 @@ h1::first-letter{
     background-attachment: fixed;
     background-position: center;
     transition: 0.5s;
+}
+main h2{
+ margin-top: 30px;
+ margin-left: 60px;
+ font-size: 40px;
 }
