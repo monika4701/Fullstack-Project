@@ -8,51 +8,130 @@
     <link rel="stylesheet"  href="../css/aboutus.css">  
 </head>
 <body>
-    <main>
-    <div id="slider"></div>
     <header>
         <div id="logo">
             <img src="../image/bb1.jpg">
         </div>
-        <div id="logoname">
         <h1> <span style="color: yellow; margin-left: 10px;">Bharat</span></h1>
         <h1><span style="color:green;margin-left: 5px;">Bhraman</span></h1>
-    </div>
+       
         <ul>
             <li><i class="fa fa-users" aria-hidden="true"></i><a href="#">About us</a></li>
             <li><i class="fa fa-cutlery" aria-hidden="true"></i><a href="../linked_pages/cuisine.html">Cuisine</a></li>
             <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="../linked_pages/destination.html">Destination</a></li>
-            <li><i class="fa fa-home" aria-hidden="true"></i><a href="../index.html">Home</a></li>
+            <li><i class="fa fa-home" aria-hidden="true"></i><A href="#"><a href="../index.html">Home</a></A></li>
         </ul>
     </header>
-    <h1 style="text-align: center; margin-top: 30px;">BHARAT BHRAMAN</h1>
-    <h1 style="text-align:center; margin: 10px;">One Stop Shop to Pick your Next Destination</h1>
-    <article>
-        <div class="wrap">
-            <div class="cube">
-              <div class="front">
-                <img src="https://cdn.pixabay.com/photo/2016/09/05/23/00/persian-leopard-1647940_960_720.jpg" width="200px" height="200px">
-              </div>
-              <div class="back">
-                <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/binoculars-1209011_960_720.jpg" width="200px" height="200px">
-              </div>
-              <div class="top">
-                <img src="https://cdn.pixabay.com/photo/2016/04/20/19/47/wolf-1341881__340.jpg" width="200px" height="200px">
-              </div>
-              <div class="bottom">
-                <img src="https://cdn.pixabay.com/photo/2014/09/07/22/17/forest-438432_960_720.jpg" width="200px" height="200px">
-              </div>
-              <div class="left">
-                <img src="https://cdn.pixabay.com/photo/2017/03/28/22/55/night-photograph-2183637_960_720.jpg " width="200px" height="200px">
-              </div>
-              <div class="right">
-                <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_960_720.jpg" width="200px" height="200px">
-              </div>
-            </div>
+    <section>
+        <video id="slider" autoplay muted loop>
+            <source src="../video/video.mp4" type="video/mp4">
+        </video>
+         <ul class="navigation">
+             <li onclick="videourl('../video/Pexels Videos 2519660.mp4')"><img src="../image/Screenshot (155).png"></li>
+             <li onclick="videourl('../video/Top 17 Tourist Places In South India During Summer.mp4')"><img src="../image/Screenshot (166).png"></li>
+             <li onclick="videourl('../video/video.mp4')"><img src="../image/Screenshot (157).png"></li>
+             <li onclick="videourl('../video/Pexels Videos 1779202.mp4')"><img src="../image/Screenshot (158).png"></li>
+         </ul>
+    </section>
+    <script type="text/javascript">
+        function videourl(videolink){
+            document.getElementById("slider").src=videolink;
+        }
+   </script>
+   
+   <!--<div id="heading">
+       <video src="../video/particles.mp4" muted=" " autoplay=" " ></video>
+       <h2><span style="color: red;">B</span>HARAT <span style="color: red;">BH</span>RAMAN</h2>
+   </div>-->
+   <div id="videotext">
+       <video autoplay muted loop>
+           <source src="../video/videotext.mp4" type="video/mp4">
+       </video>
+       <h2>Bharat Bhraman</h2>
+   </div>
+   <h1 style="text-align:center; margin-top: 170px; font-size: 40px;">One Stop Shop to Pick your Next Destination</h1>
+   <article>
+    <div class="wrap">
+        <div class="cube">
+          <div class="front">
+            <img src="https://cdn.pixabay.com/photo/2016/09/05/23/00/persian-leopard-1647940_960_720.jpg" width="200px" height="200px">
           </div>
-          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quae quia tempore illum Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum accusamus dignissimos tempore debitis adipisci. Eveniet perferendis laborum amet repellendus dicta earum, assumenda sapiente temporibus commodi alias voluptatibus maxime, nam fugit.
-             Perferendis consectetur non magni! Iure, a.</P>
+          <div class="back">
+            <img src="https://cdn.pixabay.com/photo/2016/02/19/10/00/binoculars-1209011_960_720.jpg" width="200px" height="200px">
+          </div>
+          <div class="top">
+            <img src="https://cdn.pixabay.com/photo/2016/04/20/19/47/wolf-1341881__340.jpg" width="200px" height="200px">
+          </div>
+          <div class="bottom">
+            <img src="https://cdn.pixabay.com/photo/2014/09/07/22/17/forest-438432_960_720.jpg" width="200px" height="200px">
+          </div>
+          <div class="left">
+            <img src="https://cdn.pixabay.com/photo/2017/03/28/22/55/night-photograph-2183637_960_720.jpg " width="200px" height="200px">
+          </div>
+          <div class="right">
+            <img src="https://cdn.pixabay.com/photo/2017/02/01/22/02/mountain-landscape-2031539_960_720.jpg" width="200px" height="200px">
+          </div>
+        </div>
+      </div>
+      <p>At Explore India, we offer comprehensive services for leisure and corporate travel as well as completely customized travel packages. We understand every whim of the inveterate history buff and every fetish of the critical gourmand. We indulge the fancies of the most avid traveller, and satisfy the curiosity of the most inquiring mind. Our in-depth expertise of the Indian sub-continent helps us to tailor make travel packages that are customized to individual requirements. We also cater for specialized itineraries, like culinary, cultural, spiritual, holistic, Ayurveda and wellness holidays. We assist you to get instant confirmations at competitive prices. 
+      <br>
+      <br>
+      Whether it is exotic destinations that are away from the beaten track, customized itineraries, need based incentives, creative off sites, MICE or product launches, we offer a bouquet of professional services that make your event unique and memorable. Explore India Tourism Private Limited encompass the entire range of corporate event management, corporate travel management and hospitality services. We keep in mind the social and business requirements of our clients, as well as the unique services requested by corporate travellers and professionals from different fields. We ensure that we cater to their requirements in a totally customized manner. </p>
+       
 </article>
-</main>
+<div class="header">
+    <h2>Our Team</h2>
+</div>
+<div class="section">
+<div class="team">
+    
+    <div class="card">
+        <div class="content">
+            <div class="imgBx">
+             <img src="../image/3.png">
+            </div>
+            <div class="contentBx">
+                <h3>Deepti Singh <br><span>Creative Designer</span></h3>
+            </div>
+            
+        </div>
+    
+    <ul class="sci">
+        <li style="--i:1">
+            <a href="#"><i class="fa fa-facebook" ></i></a>
+        </li>
+        <li style="--i:2">
+            <a href="#"><i class="fa fa-instagram" ></i></a>
+        </li>
+        <li style="--i:3">
+            <a href="#"><i class="fa fa-twitter" ></i></a>
+        </li>
+    </ul>
+</div>
+<div class="card">
+    <div class="content">
+        <div class="imgBx">
+         <img src="../image/2.png">
+        </div>
+        <div class="contentBx">
+            <h3>Monika Singh <br><span>Creative Designer</span></h3>
+        </div>
+        
+    </div>
+
+<ul class="sci">
+    <li style="--i:1">
+        <a href="#"><i class="fa fa-facebook" ></i></a>
+    </li>
+    <li style="--i:2">
+        <a href="#"><i class="fa fa-instagram" ></i></a>
+    </li>
+    <li style="--i:3">
+        <a href="#"><i class="fa fa-twitter" ></i></a>
+    </li>
+</ul>
+</div>
+</div>
+</div>
 </body>
 </html>

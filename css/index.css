@@ -1,99 +1,149 @@
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-        
-        body{
-            font-family: 'Times New Roman', Times, serif;
-        }
-        header {
-            height: 80px;
-            width: 100%;
-            background-color:rgba(0, 0, 0, 0.281);
-            position: fixed;
-            top: 0px;
-            z-index: 100;
-            
-        }
-        #logo img{
-            width: 70px;
-            height: 80px;
-            float: left;
-            margin-left: 20px;
-        }
-        header ul li{
-            float: right;
-            color: white;
-            font-size: 30px;
-           line-height: 70px;
-            list-style: none;
-            margin: 0px 40px;
-        }
-        i{
-            margin-right: 10px;
-            font-size: 30px;
-        
-        }
-        header h1,h2,h3{
-            float: left;
-            
-        }
-        h1::first-letter{
-            font-size: 50px;
-        }
-        a{
-            text-decoration: none;
-            color:white;
-            font-size: 25px;
-        }
-        section{
-            position: relative;
-            width: 100%;
-            height: 800px;
-            
-        }
-        section video{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 800px;
-            object-fit:cover ;
-        }
-        section .navigation{
-            position: absolute;
-            bottom: 40px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-        section .navigation li{
-            list-style: none;
-            cursor: pointer;
-            margin: 0 10px;
-            border-radius: 4px;
-            background:white;
-            padding: 3px 3px 0;
-            opacity: 0.7;
-            transition: 0.5s;
-        } 
-        section .navigation li:hover{
-            opacity: 1;
-        }
-        section .navigation img{
-            width: 120px;
-            transition: 0.5s;
-        }
-        section .navigation li img:hover{
-            width: 200px;
-        }
-        main{
-            border: 5px solid black;
-            margin: 40px 80px;
-        }
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+}
+header {
+    height: 80px;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.555);
+    position: fixed;
+    top: 0px;
+    z-index: 100;
     
+}
+#logo img{
+    width: 70px;
+    height: 80px;
+    float: left;
+    margin-left: 20px;
+}
+header ul li{
+    float: right;
+    color: white;
+    font-size: 25px;
+   line-height: 70px;
+    list-style: none;
+    margin: 0px 40px;
+}
+header h1{
+    float: left;
+    
+}
+i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+h1::first-letter{
+    font-size: 50px;
+}
+/*slider css*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container .column{
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-right: 2px solid rgba(0,0,0,.5);
+    box-sizing: border-box;
+    z-index: 1;
+}
+.container .column:last-child{
+    border-right: none;
+}
+.container .column .content{
+    position: relative;
+    height: 100%;
+}
+.container .column .content .box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(100%);
+    box-sizing: border-box;
+    padding: 40px;
+    background: rgba(255,255,255,1);
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.container .column .content h1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    background: rgba(0, 0,0, .1);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(255,255,255, .2);
+    font-size: 15em;
+    border-top: 2px solid rgba(0,0,0,.5);
+    border-bottom: 2px solid rgba(0,0,0,.5);
+}
+.container .column .content .box h2{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    color: #262626;
+}
+.container .column .content .box p{
+    color: #262626;
+    font-size: 18px;
+
+}
+.container .column .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+.container .column.active .bg.bg1{
+    background: url(../image/image2.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+}
+.container .column.active .bg.bg2{
+    background: url(../image/Ooty.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+}
+.container .column.active .content .box {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.container .column.active .bg.bg3{
+    background: url(../image/cover-for-Places-To-Visit-In-Rishikesh-In-May_16-Jan.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+}
+.container .column.active .bg.bg4{
+    background: url(../image/Meghalaya-1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+}
