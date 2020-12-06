@@ -14,6 +14,13 @@ a{
     text-decoration: none;
     font-size: 25px;
 }
+header a:hover{
+  color: crimson;
+  transition: 0.7s;
+}
+header .fa:hover{
+    color: crimson;
+}
 header {
     height: 80px;
     width: 100%;
@@ -77,7 +84,7 @@ h1::first-letter{
     transform: translateY(100%);
     box-sizing: border-box;
     padding: 40px;
-    background: rgba(255,255,255,1);
+    background: rgba(255, 255, 255, 0.589);
     text-align: center;
     transition: 0.5s;
     opacity: 0;
@@ -100,11 +107,12 @@ h1::first-letter{
     margin: 0;
     padding: 0;
     font-size: 30px;
-    color: #262626;
+    color:black;
 }
 .container .column .content .box p{
     color: #262626;
     font-size: 18px;
+    margin-top: 5px;
 
 }
 .container .column .bg{
@@ -220,7 +228,7 @@ section .slide:nth-child(6){
     background-position: center center;
 }
 section .slide:nth-child(7){
-    background: url(https://lh3.googleusercontent.com/proxy/SD6KGHrJye-PjtQcQLx-nuoX030Y5u_BmKe1PHFKhwDSOmsLNxEfsH_d-9p8RRVykhuJCP_f6R3FI4NIjh1OBR0okY9Rk7xdfBb8E5H4h6DVCCZ8TI368CXzFHMx2rhmFq0F43HM0GM);
+    background: url(../image/indiancuisine.jpg);
     background-position: center center;
 }
 section::before{
@@ -233,16 +241,16 @@ section::after{
 }
 
 .flip-cont{
-    width: 350px;
-    height: 450px;
-    background: #2e517d;
+    width: 450px;
+    height: 550px;
+    background: url(../image/Screenshot_20201206-121256_cont.jpg);
     margin-top: 850px;
     transform: translate(-50%,-50%);
     perspective: 1000px;
     float: right;
 }
 .flip-cover{
-    width: 320px;
+    width: 420px;
     height: 100%;
     position: absolute;
     left: 40px;
@@ -264,10 +272,10 @@ figure{
     backface-visibility: hidden;
 }
 figure.front{
-    background: red;
+    background:url(../image/Screenshot_20201206-121712_front_1.jpg);
 }
 figure.back{
-    background:green;
+    background:url(../image/Screenshot_20201206-121249_cover.jpg);
     transform: rotateY(180deg);
 }
 /*
