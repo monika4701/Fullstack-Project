@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destination2</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #16384c;
+    }
+    header {
+            height: 80px;
+            width: 100%;
+            background-color:rgba(0, 0, 0, 0.281);
+            position: fixed;
+            top: 0px;
+            z-index: 100;
+            
+        }
+        #logo img{
+            width: 70px;
+            height: 80px;
+            float: left;
+            margin-left: 20px;
+        }
+        header ul li{
+            float: right;
+            color: white;
+            font-size: 30px;
+           line-height: 70px;
+            list-style: none;
+            margin: 0px 40px;
+            transition: 0.3s;
+        }
+        header i{
+            margin-right: 10px;
+            font-size: 30px;
+        
+        }
+        header h1,h3{
+            float: left;
+            
+        }
+         header h1::first-letter{
+            font-size: 50px;
+        }
+        header a{
+            text-decoration: none;
+            color:white;
+            font-size: 25px;
+        }
+        header ul li:hover{
+            color: goldenrod;
+            font-size: 40px;
+            
+        }
+    .container{
+        position: relative;
+        width:1100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        top: 90px;
+    }
+    .container .card{
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 20px rgba(0,0,0,.5);
+        transition: 0.3s ease-in-out;
+        /*justify-content: center;
+        align-items: center;*/
+    }
+    .container .card:hover{
+        height: 420px;
+    }
+    .container .card .imgBx{
+        position: relative;
+        width: 260px;
+        height: 220px;
+        top: -60px;
+        left: 15px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(0,0,0,.2);
+    }
+    .container .card .imgBx img{
+        max-width: 100%;
+        border-radius: 4px;
+        width: 260px;
+        height: 220px;
+    }
+    .container .card .content{
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        color: white;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .container .card .content h2{
+        text-decoration: underline;
+        text-shadow: 0px 1px 1px whitesmoke;
+        margin-bottom: 5px;
+    }
+    .container .card .content hr{
+        color:white;
+        height: 3px;
+        text-shadow: 0px 1px 1px solid whitesmoke;
+        margin-top: 5px;
+        background: white;
+    }
+    .container .card:hover .content{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s;
+    }
+    
+</style>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../image/bb1.jpg">
+        </div>
+        <h1> <span style="color: yellow; margin-left: 10px;">Bharat</span></h1>
+        <h1><span style="color:green;margin-left: 5px;">Bhraman</span></h1>
+        <ul>
+            <li><i class="fa fa-users" aria-hidden="true"></i><a href="../linked_pages/aboutus.html">About us</a></li>
+            <li><i class="fa fa-cutlery" aria-hidden="true"></i><a href="../linked_pages/cuisine.html">Cuisine</a></li>
+            <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="#">Destination</a></li>
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="../index.html">Home</a></li>
+            <li><i class="fa fa-caret-left" aria-hidden="true"></i><a href="./destination.html">Back</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/j&k3.jpg">
+            </div>
+            <div class="content">
+                <h2>Jammu and Kashmir</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+                <hr>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/pb.jpg">
+            </div>
+            <div class="content">
+                <h2>Punjab</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/hr3.jpg">
+            </div>
+            <div class="content">
+                <h2>Haryana</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/hp.jpg">
+            </div>
+            <div class="content">
+                <h2>Himachal Pradesh</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/uk.jpg">
+            </div>
+            <div class="content">
+                <h2>Uttarakhand</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/rj.jpg">
+            </div>
+            <div class="content">
+                <h2>Rajasthan</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/up.jpg">
+            </div>
+            <div class="content">
+                <h2>Uttar Pradesh</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/bh.jpg">
+            </div>
+            <div class="content">
+                <h2>Bihar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/gj.jpg">
+            </div>
+            <div class="content">
+                <h2>Gujrat</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/mp.jpg">
+            </div>
+            <div class="content">
+                <h2>Madhya Pradesh</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/jk.jpg">
+            </div>
+            <div class="content">
+                <h2>Jharkhand</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/wb.jpg">
+            </div>
+            <div class="content">
+                <h2>West Bengal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/goa.jpg">
+            </div>
+            <div class="content">
+                <h2>Goa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/mh.jpg">
+            </div>
+            <div class="content">
+                <h2>Maharashtra</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/karna.jpg">
+            </div>
+            <div class="content">
+                <h2>Karnataka</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/ap.jpg">
+            </div>
+            <div class="content">
+                <h2>Andhra Pradesh</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/ker.jpg">
+            </div>
+            <div class="content">
+                <h2>Kerela</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/tn.jpg">
+            </div>
+            <div class="content">
+                <h2>Tamil Nadu</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/sik.jpg">
+            </div>
+            <div class="content">
+                <h2>Sikkim</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/megh.jpg">
+            </div>
+            <div class="content">
+                <h2>Meghalaya</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="../image/destination2_imgs/mani.jpg">
+            </div>
+            <div class="content">
+                <h2>Manipur</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam cupiditate nisi laudantium enim incidunt at voluptates necessitatibus impedit. Dolore, repellendus?</p>
+            <hr></div>
+        </div>
+    </div>
+</body>
+</html>

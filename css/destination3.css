@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+}
+header {
+        height: 80px;
+        width: 100%;
+        background-color:rgba(0, 0, 0, 0.281);
+        position: fixed;
+        top: 0px;
+        z-index: 100;
+        
+    }
+    #logo img{
+        width: 70px;
+        height: 80px;
+        float: left;
+        margin-left: 20px;
+    }
+    header ul li{
+        float: right;
+        color: white;
+        font-size: 30px;
+       line-height: 70px;
+        list-style: none;
+        margin: 0px 40px;
+        transition: 0.3s;
+    }
+    header i{
+        margin-right: 10px;
+        font-size: 30px;
+    
+    }
+    header h1,h3{
+        float: left;
+        
+    }
+     header h1::first-letter{
+        font-size: 50px;
+    }
+    header a{
+        text-decoration: none;
+        color:white;
+        font-size: 25px;
+    }
+    header ul li:hover{
+        color: goldenrod;
+        font-size: 40px;
+        
+    }
+.container{
+    position: relative;
+    width:1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    top: 90px;
+}
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,.5);
+    transition: 0.3s ease-in-out;
+    /*justify-content: center;
+    align-items: center;*/
+}
+.container .card:hover{
+    height: 420px;
+}
+.container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 220px;
+    top: -60px;
+    left: 15px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,.2);
+}
+.container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+    width: 260px;
+    height: 220px;
+}
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.container .card .content h2{
+    text-decoration: underline;
+    text-shadow: 0px 1px 1px whitesmoke;
+    margin-bottom: 5px;
+}
+.container .card .content hr{
+    color:white;
+    height: 3px;
+    text-shadow: 0px 1px 1px solid whitesmoke;
+    margin-top: 5px;
+    background: white;
+}
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
