@@ -241,8 +241,8 @@ section::after{
 }
 
 .flip-cont{
-    width: 350px;
-    height: 460px;
+    width: 380px;
+    height: 480px;
     background: url(../image/Screenshot_20201206-121256_cont.jpg);
     margin-top: 850px;
     transform: translate(-50%,-50%);
@@ -250,7 +250,7 @@ section::after{
     float: right;
 }
 .flip-cover{
-    width: 320px;
+    width: 350px;
     height: 100%;
     position: absolute;
     left: 40px;
