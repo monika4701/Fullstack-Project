@@ -5,7 +5,7 @@
         }
         
         body{
-            font-family: 'Times New Roman', Times, serif;
+            font-family: 'Poppins',sans-serif;
         }
         header {
             height: 80px;
@@ -35,6 +35,10 @@
             font-size: 30px;
         
         }
+        header ul li:hover{
+            color: goldenrod;
+            font-size: 40px;
+            }
         header h1,h2,h3{
             float: left;
             
@@ -479,7 +483,7 @@ footer p{
 }
 .footer-sci li a .fa{
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
 }
 .quickLinks{
     position: relative;
