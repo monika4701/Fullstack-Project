@@ -303,13 +303,14 @@ article h2{
 article p{
     position: relative;
     top: 700px;
-    left: 500px;
+    left: 350px;
     max-width: 500px;
+    font-size: 20px;
 }
 article a{
     position: relative;
     top: 720px;
-    left: 600px;
+    left: 410px;
     display: inline-block;
     padding: 15px 30px;
     color: black;
@@ -518,7 +519,7 @@ footer p{
     margin-left: 40px;
     position: relative;
     top: 900px;
-	width: 100%;
+	width: 1200px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
