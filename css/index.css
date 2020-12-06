@@ -125,14 +125,14 @@ h1::first-letter{
     z-index: -1;
 }
 .container .column.active .bg.bg1{
-    background: url(../image/image2.jpeg);
+    background: url(../image/purvottar.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     transition: 0.5s;
 }
 .container .column.active .bg.bg2{
-    background: url(../image/Ooty.jpg);
+    background: url(../image/uttar.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -143,14 +143,14 @@ h1::first-letter{
     transform: translateY(-50%);
 }
 .container .column.active .bg.bg3{
-    background: url(../image/cover-for-Places-To-Visit-In-Rishikesh-In-May_16-Jan.jpg);
+    background: url(../image/dakshin.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     transition: 0.5s;
 }
 .container .column.active .bg.bg4{
-    background: url(../image/Meghalaya-1.jpg);
+    background: url(../image/paschim.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -241,8 +241,8 @@ section::after{
 }
 
 .flip-cont{
-    width: 450px;
-    height: 550px;
+    width: 350px;
+    height: 460px;
     background: url(../image/Screenshot_20201206-121256_cont.jpg);
     margin-top: 850px;
     transform: translate(-50%,-50%);
@@ -250,7 +250,7 @@ section::after{
     float: right;
 }
 .flip-cover{
-    width: 420px;
+    width: 320px;
     height: 100%;
     position: absolute;
     left: 40px;
@@ -321,12 +321,12 @@ article a{
     overflow: hidden;
     transition: 0.2s;
 }
-article a:hover{
+/*article a:hover{
     color: #255784;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3;
     transition-delay:1s ;
-}
+}*/
 article a span{
     position: absolute;
     display: block;
@@ -462,7 +462,7 @@ footer p{
 }
 .footer-sci li a .fa{
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
 }
 .quickLinks{
     position: relative;
